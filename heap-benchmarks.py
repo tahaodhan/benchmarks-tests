@@ -3,7 +3,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Load the CSV
-df = pd.read_csv("benchmark.csv")
+df = pd.read_csv("memory-usage.csv")
 
 # Convert heap used from bytes to kilobytes
 df["heap_kb"] = df["heap_used"] / 1024

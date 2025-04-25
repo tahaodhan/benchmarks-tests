@@ -3,7 +3,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from matplotlib.ticker import LogLocator, ScalarFormatter
 
-df = pd.read_csv("combinedtests.csv")
+df = pd.read_csv("execution-time-combined.csv")
 
 if "latency_us" in df.columns:
     df["exec_time_us"] = df["latency_us"]
